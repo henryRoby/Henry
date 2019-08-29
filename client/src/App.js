@@ -43,31 +43,22 @@ if (localStorage.jwtToken) {
 class App extends Component {
   render() {
     return (
+      <div id="tout" className="container-fluid">
       <Provider store={store}>
        
         <Router>
-          <div className="containe">
+          <div className="container-fluid">
           <Route exact path="/" component={Menu} />
           <Route exact path="/Atelier" component={Menu} />
           <Route exact path="/Particulier" component={Menu} />
-            <div className="container-fluid">
-              <div className="row">
-                <div className="col-md-3">
-                
-                </div>
-                <div className="col-md-9">
-                  <div className="container">
-                  </div>
-                </div>
-              </div>
-            </div>
+            <div>
             <Route exact path="/" component={Landing} />
             <Route exact path="/Particulier" component={Particulier} />
             <Route exact path="/register" component={Register} />
             <Route exact path="/login" component={Login} />
             <Route exact path="/newAtelier" component={NewAtelier} />
             <Route exact path="/Atelier" component={ListTout} />
-            
+            </div>
             <Switch>
               <PrivateRoute exact path="/modifierAtl/:id" component={EditAtelier} />
               <PrivateRoute exact path="/dashboard" component={Dashboard} />
@@ -76,6 +67,7 @@ class App extends Component {
           </div>
         </Router>
       </Provider>
+      </div>
     );
   }
 }

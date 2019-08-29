@@ -22,9 +22,9 @@ export default class Menu extends Component {
         });
     }
     render() {
-        let imgUrl = './images.jpeg'
+        let imgUrl = 'https://s3-eu-west-1.amazonaws.com/com.okpal.media/c/O/BEQsa-96676252.jpg'
         return (
-            <div>
+            <div className="container-fluid">
                 <MDBNavbar color="" dark expand="md" id="navbar">
                     <MDBNavbarBrand>
                         <div id="contentlogo"><img src="" alt="logo" id="logo" /></div>
