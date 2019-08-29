@@ -1,0 +1,8 @@
+.slide{
+   width:400px;
+   margin-left: 50%;
+    border: 1px solid;
+    border-radius:15px;
+    padding:5px;
+     background-color: rgb(169, 217, 226) ;
+}
